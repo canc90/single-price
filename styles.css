@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --bright-Yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    max-width: 635px;
+    border-radius: 12px;
+    box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+}
+
+.community {
+    padding: 40px;
+}
+
+h2 {
+    color: var(--Cyan);
+    padding-bottom: 25px;
+    opacity: 0.9;
+}
+
+.community h3 {
+    font-weight: bold;
+    color: var(--bright-Yellow);
+    padding-bottom: 16px;
+    opacity: 0.9;
+}
+
+.community p {
+    color: var(--grayish-blue);
+    line-height: 30px;
+    opacity: 0.7;
+}
+
+.plan {
+    display: flex;
+}
+
+.sub {
+    padding: 40px;
+    background-color: var(--Cyan);
+    color: #fff;
+}
+
+.sub h3 {
+    opacity: 0.9;
+    padding-bottom: 20px;
+}
+
+.price {
+    display: inline-flex !important;
+}
+
+.price p {
+    padding: 8px 0px 0px 12px;
+    opacity: 0.5;
+}
+
+.access {
+    padding: 10px 0px 20px 0px;
+    opacity: 0.8;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: karla, sans-serif;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--bright-Yellow);
+    color: #fff;
+    border: none;
+}
+
+.why {
+    padding: 40px;
+    background-color: hsl(179, 47%, 52%);
+    opacity: 0.8;
+    color: #fff;
+
+
+}
+
+.why h3 {
+    padding-bottom: 20px;
+    opacity: 0.9 !important;
+}
+
+li {
+    padding-bottom: 3px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+@media screen and (min-width:600px) {
+    .why {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 90%;
+        margin: 30px 25px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .community {
+        padding-right: 20px;
+    }
+
+    .why .sub {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
